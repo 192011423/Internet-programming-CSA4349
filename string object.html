@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>string object</title>
+</head>
+<body>
+<h1>String methods</h1>
+<script type="text/javascript">
+var str="Hi everyone";
+document.write("<br>The default string is hi everyone");
+var res=str.charAt(0);
+document.write("<br>CharAt index of 0 is \t"+str+"\tis\t"+res);
+var res1=str.charCodeAt;
+document.write("<br>CharcterCode of first character is\t"+str+"\tis\t"+res1);
+var res2=str.toLowerCase();
+document.write("<br>Converting uppercase to lowercase is\t"+res2);
+var res3=str.toUpperCase();
+document.write("<br>Converting to lowercase to uppercase\t"+res3);
+var str2="Hi everyone welcome to the universe";
+var res4=str2.indexOf("everyone");
+document.write("<br>The string index(everyone) is in the sequence of\t"+str2+"\tis\t"+res4);
+var res5=str2.indexOf("e",5);
+document.write("<br>The first occurence of the letter 'e' in the sequence is"+str2+"\tis\t"+res5);
+var res6=str2.lastIndexOf("o",15);
+document.write("<br>return the last occurence of the specified'(O)'value in the"+str+"\tis\t"+res6);
+var res7=str2.split("");
+for(i=0;i<res7.length;i++)
+document.write("<br>The breaking of string into tokens separator is space and limit is null, then"+str2+"\tis\t"+res7[i]);
+var res8=str2.substring(1,8);
+document.write("The substring(1,8) of"+str2+"\tis\t"+res8);
+var res9=str2.length;
+document.write("Return the length of"+str2+"\tis\t"+res9);
+</script>
+</body>
